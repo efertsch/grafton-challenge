@@ -9,33 +9,119 @@ body {
     background: -o-linear-gradient(90deg, #1d1d1d 0%, rgba(29, 29, 29, 0) 100%);
     background: -ms-linear-gradient(90deg, #1d1d1d 0%, rgba(29, 29, 29, 0) 100%);
     background: linear-gradient(0deg, #1d1d1d 0%, rgba(29, 29, 29, 0) 100%);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .banner {
-    height: 50vh;
+    width: 100%;
     background-image: url("assets/images/banner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner > .banner__heading {
-    text-transform: capitalize;
-    color: #fff;
-    align-self: center;
-    justify-self: center;
+.banner__heading-container .banner__heading {
+    height: 16.7%;
+    width: 66.5%;
+    text-transform: uppercase;
+    color:rgb(255,255,255);
     text-align: center;
-
+    font-weight: 800;
+    font-size: 3rem;
 }
 
 .nav {
-    align-self: end;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
+.nav__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .nav__item {
     display: inline-block;
     text-decoration: none;
+    margin: 2em; 
 }
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav__item  a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__button {
+    background: rgb(249, 105, 45);
+    border-radius: 30%;
+    border: 1px solid  rgb(249, 105, 45);
+    padding: 1.5em;
+    color: rgb(255,255,255);
+    width: 100px;
+    text-transform: uppercase;
+}
+
+.activities {
+    display: flex;
+    margin-top: 2px;
+}
+
+.activity {
+    height: 50vh;
+    width: 748px;
+    color:rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.activity h2 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.activity--backpacking {
+    background-image: url("assets/images/backpacking.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.activity--camping {
+    background-image: url("assets/images/camping.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-left: 2px;
+}
+
+.activity--hiking {
+    background-image: url("assets/images/hiking.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-left: 2px;
+}
+
+/* Option 2 */
+/* - Make the page responsive by adding media queries for specified breakpoints and implement flex box wrapping features */
+
+
+/* Improvements if I had more time: */
+/* 1. Fix layout issues */
+/* 2. Implement SCSS  */
+/* 3. Mobile first design */
+/* 4. Refactoring code */ 
+
 
