@@ -3,13 +3,39 @@ html, body {
     padding: 0;
 }
 
-.nav__item {
-    display: inline-block;
-    text-decoration: none;
-
+body {
+    background: -webkit-linear-gradient(90deg, #1d1d1d 0%, rgba(29, 29, 29, 0) 100%);
+    background: -moz-linear-gradient(90deg, #1d1d1d 0%, rgba(29, 29, 29, 0) 100%);
+    background: -o-linear-gradient(90deg, #1d1d1d 0%, rgba(29, 29, 29, 0) 100%);
+    background: -ms-linear-gradient(90deg, #1d1d1d 0%, rgba(29, 29, 29, 0) 100%);
+    background: linear-gradient(0deg, #1d1d1d 0%, rgba(29, 29, 29, 0) 100%);
 }
 
 .banner {
     height: 50vh;
-    background: blue;
+    background-image: url("assets/images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: row;
 }
+
+.banner > .banner__heading {
+    text-transform: capitalize;
+    color: #fff;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
+}
+
+.nav {
+    align-self: end;
+}
+
+.nav__item {
+    display: inline-block;
+    text-decoration: none;
+}
+
